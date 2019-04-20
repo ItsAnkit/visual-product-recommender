@@ -1,0 +1,24 @@
+#Installation for cpu, run them as root
+
+sudo apt-get update  
+sudo apt-get upgrade  
+sudo apt-get install build-essential cmake g++ gfortran git pkg-config python-dev software-properties-common wget
+sudo apt-get autoremove 
+
+sudo apt-get update && apt-get install -y python-numpy python-scipy python-nose \
+                                          python-h5py python-skimage python-matplotlib \
+                                  python-pandas python-sklearn python-sympy
+sudo apt-get clean && sudo apt-get autoremove
+
+#Tensorflow
+sudo apt-get install python-pip python-dev
+sudo pip install --upgrade pip
+sudo pip install --upgrade tensorflow
+
+sudo apt-get install -y libfreetype6-dev libpng12-dev
+sudo pip install -U matplotlib ipython[all] jupyter pandas scikit-image
+
+#sframe, keras
+sudo pip install -U sframe
+sudo pip install keras
+sudo pip install flask
